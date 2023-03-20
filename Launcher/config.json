@@ -9,12 +9,12 @@
   "environment": "backtesting", // "live-paper", "backtesting", "live-interactive", "live-interactive-iqfeed"
 
   // algorithm class selector
-  "algorithm-type-name": "BasicTemplateFrameworkAlgorithm",
+  "algorithm-type-name": "ATestHistoryAlgorithm", //BasicTemplateFrameworkAlgorithm\"",
 
   // Algorithm language selector - options CSharp, Python
   "algorithm-language": "CSharp",
 
-  //Physical DLL location
+  //Physical DLL location (project name.dll)
   "algorithm-location": "QuantConnect.Algorithm.CSharp.dll",
   //"algorithm-location": "../../../Algorithm.Python/BasicTemplateFrameworkAlgorithm.py",
 
@@ -27,6 +27,8 @@
   // debugging configuration - options for debugging-method LocalCmdLine, VisualStudio, Debugpy, PyCharm
   "debugging": true,
   "debugging-method": "VisualStudio",
+  "debug-mode": true,
+
 
   // location of a python virtual env to use libraries from
   //"python-venv": "/venv",
@@ -36,6 +38,7 @@
   "messaging-handler": "QuantConnect.Messaging.Messaging",
   "job-queue-handler": "QuantConnect.Queues.JobQueue",
   "api-handler": "QuantConnect.Api.Api",
+  "map-file-provider": "QuantConnect.Data.Auxiliary.LocalDiskMapFileProvider",
   "map-file-provider": "QuantConnect.Data.Auxiliary.LocalDiskMapFileProvider",
   "factor-file-provider": "QuantConnect.Data.Auxiliary.LocalDiskFactorFileProvider",
   "data-provider": "QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider",
@@ -66,8 +69,8 @@
   "transaction-log": "",
 
   // To get your api access token go to quantconnect.com/account
-  "job-user-id": "0",
-  "api-access-token": "",
+  "job-user-id": "13316",
+  "api-access-token": "deffb1b346c3dd11d6bc214975125a12",
   "job-organization-id": "",
 
   // live data configuration

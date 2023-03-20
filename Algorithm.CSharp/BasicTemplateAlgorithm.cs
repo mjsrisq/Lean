@@ -35,15 +35,15 @@ namespace QuantConnect.Algorithm.CSharp
         /// </summary>
         public override void Initialize()
         {
-            SetStartDate(2013, 10, 07);  //Set Start Date
-            SetEndDate(2013, 10, 11);    //Set End Date
+            SetStartDate(2020, 01, 01);  //Set Start Date
+            SetEndDate(2020, 12, 31);    //Set End Date
             SetCash(100000);             //Set Strategy Cash
 
             // Find more symbols here: http://quantconnect.com/data
             // Forex, CFD, Equities Resolutions: Tick, Second, Minute, Hour, Daily.
             // Futures Resolution: Tick, Second, Minute
             // Options Resolution: Minute Only.
-            AddEquity("SPY", Resolution.Minute);
+            AddEquity("SPY", Resolution.Daily);
 
             // There are other assets with similar methods. See "Selecting Options" etc for more details.
             // AddFuture, AddForex, AddCfd, AddOption
