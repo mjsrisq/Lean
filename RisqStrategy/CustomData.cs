@@ -43,7 +43,8 @@ namespace RisqData
 
         public static DataConfig GetDataConfig()
         {
-            var test = "C:/Users/mjs/source/repos/Lean/RisqStrategy/appsettings.json";
+
+        var test = "C://Users/mjs/source/repos/Lean/RisqStrategy/";
 
             var config = new ConfigurationBuilder()
                 .SetBasePath(test)

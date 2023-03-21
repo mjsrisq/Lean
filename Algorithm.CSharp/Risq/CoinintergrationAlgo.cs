@@ -32,8 +32,8 @@ namespace QuantConnect.Algorithm.CSharp
 
             WindowSimpleMovingAverage = new RollingWindow<double>(WindowSize);
             
-            _ = AddData<S1>("S1", Resolution.Daily).Symbol;
-            _ = AddData<S2>("S2", Resolution.Daily).Symbol;
+            _ = AddData<Symbol>("TTFMc1", Resolution.Hour).Symbol;
+            _ = AddData<Symbol>("TTFMc2", Resolution.Daily).Symbol;
 
         }
 
@@ -110,7 +110,7 @@ namespace QuantConnect.Algorithm.CSharp
         }
     }
 
-    public class S1 : BaseData
+    public class Symbol : BaseData
     {
         int header = 0;
         public string[] Series;
@@ -128,21 +128,22 @@ namespace QuantConnect.Algorithm.CSharp
 
             // Create dataframe with adjusted rollovers
             // In the future this should be a call to a database, server etc. 
-            DataHandle AccessCSV = new DataHandle(metadata_PATH);
+          //  DataHandle AccessCSV = new DataHandle(metadata_PATH);
 
+            var source = File_Location[0];
 
-            string data_path = Path.Combine(Globals.DataFolder, RollOverData_NameFile);
-            var source = data_path;
-            if (!File.Exists(data_path))
-            {
-                var ListDocuments = new List<string> { RIC_product };
-                var paths = File_Location;
-                var AdjustedFuturePrices = AccessCSV.LocalCSV(ListDocuments, paths);
+            //var source = Path.Combine(Globals.DataFolder, RollOverData_NameFile);
+            //var source = data_path;
+            //if (!File.Exists(data_path))
+            //{
+            //    var ListDocuments = new List<string> { RIC_product };
+            //    var paths = File_Location;
+            //    var AdjustedFuturePrices = AccessCSV.LocalCSV(ListDocuments, paths);
 
-                // Create CSV with the adjusted rollovers 
-                var path = AccessCSV.RollOverDataFrame(AdjustedFuturePrices, RollOverData_PathFile);
-                source = Path.Combine(Globals.DataFolder, RollOverData_NameFile);
-            }
+            //    // Create CSV with the adjusted rollovers 
+            //    var path = AccessCSV.RollOverDataFrame(AdjustedFuturePrices, RollOverData_PathFile);
+            //    source = Path.Combine(Globals.DataFolder, RollOverData_NameFile);
+            //}
             // Return path to reader 
             return new SubscriptionDataSource(source, SubscriptionTransportMedium.LocalFile);
         }
