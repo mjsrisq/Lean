@@ -16,6 +16,7 @@
 using Deedle;
 using NUnit.Framework;
 using QuantConnect.Algorithm.CSharp;
+using QuantConnect.Algorithm.CSharp.Risq;
 using QuantConnect.Configuration;
 using QuantConnect.Lean.Engine.Results;
 using QuantConnect.Logging;

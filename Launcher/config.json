@@ -9,7 +9,7 @@
   "environment": "backtesting", // "live-paper", "backtesting", "live-interactive", "live-interactive-iqfeed"
 
   // algorithm class selector
-  "algorithm-type-name": "ATestHistoryAlgorithm", //BasicTemplateFrameworkAlgorithm\"",
+  "algorithm-type-name": "RISQPairsCointegration", //BasicTemplateFrameworkAlgorithm\"",
 
   // Algorithm language selector - options CSharp, Python
   "algorithm-language": "CSharp",
@@ -38,7 +38,6 @@
   "messaging-handler": "QuantConnect.Messaging.Messaging",
   "job-queue-handler": "QuantConnect.Queues.JobQueue",
   "api-handler": "QuantConnect.Api.Api",
-  "map-file-provider": "QuantConnect.Data.Auxiliary.LocalDiskMapFileProvider",
   "map-file-provider": "QuantConnect.Data.Auxiliary.LocalDiskMapFileProvider",
   "factor-file-provider": "QuantConnect.Data.Auxiliary.LocalDiskFactorFileProvider",
   "data-provider": "QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider",

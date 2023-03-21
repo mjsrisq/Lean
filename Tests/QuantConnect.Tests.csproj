@@ -32,6 +32,16 @@
   </PropertyGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <ItemGroup>
+    <None Remove="C:\Users\mjs\.nuget\packages\quantconnect.pythonnet\2.0.18\contentFiles\any\any\pythonnet\find_libpython\__init__.py" />
+    <None Remove="C:\Users\mjs\.nuget\packages\quantconnect.pythonnet\2.0.18\contentFiles\any\any\pythonnet\find_libpython\__main__.py" />
+    <None Remove="C:\Users\mjs\.nuget\packages\quantconnect.pythonnet\2.0.18\contentFiles\any\any\pythonnet\runtime\Python.Runtime.deps.json" />
+    <None Remove="C:\Users\mjs\.nuget\packages\quantconnect.pythonnet\2.0.18\contentFiles\any\any\pythonnet\runtime\Python.Runtime.dll" />
+    <None Remove="C:\Users\mjs\.nuget\packages\quantconnect.pythonnet\2.0.18\contentFiles\any\any\pythonnet\runtime\Python.Runtime.pdb" />
+    <None Remove="C:\Users\mjs\.nuget\packages\quantconnect.pythonnet\2.0.18\contentFiles\any\any\pythonnet\util\__init__.py" />
+    <None Remove="C:\Users\mjs\.nuget\packages\quantconnect.pythonnet\2.0.18\contentFiles\any\any\pythonnet\__init__.py" />
+    <None Remove="C:\Users\mjs\.nuget\packages\quantconnect.pythonnet\2.0.18\contentFiles\any\any\pythonnet\__pycache__\__init__.cpython-36.pyc" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="QuantConnect.pythonnet" Version="2.0.18" />
     <PackageReference Include="Accord" Version="3.6.0" />
     <PackageReference Include="Accord.Math" Version="3.6.0" />

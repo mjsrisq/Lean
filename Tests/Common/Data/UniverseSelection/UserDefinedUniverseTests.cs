@@ -19,6 +19,7 @@ using System.Threading;
 using QuantConnect.Data;
 using System.Collections.Generic;
 using QuantConnect.Algorithm.CSharp;
+using QuantConnect.Algorithm.CSharp.Risq;
 
 namespace QuantConnect.Tests.Common.Data.UniverseSelection
 {

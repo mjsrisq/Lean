@@ -16,6 +16,7 @@
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using QuantConnect.Algorithm.CSharp;
+using QuantConnect.Algorithm.CSharp.Risq;
 using QuantConnect.Configuration;
 using QuantConnect.Interfaces;
 using System;

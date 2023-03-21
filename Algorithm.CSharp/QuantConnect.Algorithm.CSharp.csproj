@@ -53,6 +53,7 @@
     <ProjectReference Include="..\Algorithm\QuantConnect.Algorithm.csproj" />
     <ProjectReference Include="..\Common\QuantConnect.csproj" />
     <ProjectReference Include="..\Indicators\QuantConnect.Indicators.csproj" />
+    <ProjectReference Include="..\RisqStrategy\RisqStrategy.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\LICENSE">

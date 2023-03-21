@@ -17,6 +17,7 @@ using System;
 using System.Linq;
 using NUnit.Framework;
 using QuantConnect.Algorithm.CSharp;
+using QuantConnect.Algorithm.CSharp.Risq;
 using QuantConnect.Brokerages.Backtesting;
 using QuantConnect.Data;
 using QuantConnect.Data.Market;
