@@ -65,8 +65,6 @@ namespace Future_Adjustments
 		    var ricMetaPath = ConfigurationManager.ConnectionStrings["cntMetaDataDebug"].ConnectionString;
 		    foreach(var path in ListFilePaths)
 		    {
-			
-			
 			    var _file = CsvReadWrite.CsvImport<CntMetaData>(ricMetaPath).Where(x => x.Path.Contains(path)).ToList()[0]; // match the path names with the name of the file 
 			    cntMeta.Add(_file);
 

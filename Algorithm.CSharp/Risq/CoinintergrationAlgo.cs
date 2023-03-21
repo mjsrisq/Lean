@@ -115,7 +115,6 @@ namespace QuantConnect.Algorithm.CSharp
         int header = 0;
         public string[] Series;
 
-
         public override SubscriptionDataSource GetSource(SubscriptionDataConfig config, DateTime date, bool isLive)
         {
 
@@ -164,8 +163,6 @@ namespace QuantConnect.Algorithm.CSharp
                 header++;
                 return null; // The first line should be the header and should not be relevant 
             }
-
-
 
             var data = line.Split(',');
             int index_location = data.Length - 1;
@@ -218,7 +215,6 @@ namespace QuantConnect.Algorithm.CSharp
             // In the future this should be a call to a database, server etc. 
             DataHandle AccessCSV = new DataHandle(metadata_PATH);
 
-
             string data_path = Path.Combine(Globals.DataFolder, RollOverData_NameFile);
             var source = data_path;
             if (!File.Exists(data_path))
@@ -251,8 +247,6 @@ namespace QuantConnect.Algorithm.CSharp
                 header++;
                 return null; // The first line should be the header and should not be relevant 
             }
-
-
 
             var data = line.Split(',');
             int index_location = data.Length - 1;

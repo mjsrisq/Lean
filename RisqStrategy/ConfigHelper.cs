@@ -1,14 +1,12 @@
-﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using ConfigurationBuilder = Microsoft.Extensions.Configuration.ConfigurationBuilder;
 
-
-
-
-namespace Future_Adjustments{
-public static class ConfigHelper
+namespace Future_Adjustments
+    {
+    public static class ConfigHelper
     {
 		public class StratConfig
 		{

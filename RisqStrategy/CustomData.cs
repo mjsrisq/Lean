@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MathNet.Numerics.LinearAlgebra;
 using Microsoft.Extensions.Configuration;
+using QLNet;
 using ConfigurationBuilder = Microsoft.Extensions.Configuration.ConfigurationBuilder;
 
 
-namespace CustomData
+namespace RisqData
 {
     public class DataSpecs
     {
@@ -41,8 +43,10 @@ namespace CustomData
 
         public static DataConfig GetDataConfig()
         {
+            var test = "C:/Users/mjs/source/repos/Lean/RisqStrategy/appsettings.json";
+
             var config = new ConfigurationBuilder()
-                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .SetBasePath(test)
                 .AddJsonFile("appsettings.json")
                 .Build();
 
